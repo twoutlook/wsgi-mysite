@@ -1,5 +1,5 @@
 # wsgi-mysite
-### 這配合 https://bbs.huaweicloud.com/blogs/143339
+### 這是配合 https://bbs.huaweicloud.com/blogs/143339
 
 目的是要將三個檔案分別放到定位
 
