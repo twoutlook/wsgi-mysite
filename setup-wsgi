@@ -1,0 +1,15 @@
+sudo cp wsgi-mysite/mysite.conf /etc/httpd/conf.d/mysite.conf
+sudo cp wsgi-mysite/02-mod_wsgi.conf /etc/httpd/conf.modules.d/02-mod_wsgi.conf
+sudo cp wsgi-mysite/mod_wsgi.so /etc/httpd/modules/mod_wsgi.so
+echo "...to check result(1)"
+cat /etc/httpd/conf.d/mysite.conf
+
+echo "...to check result(2)"
+cat /etc/httpd/conf.modules.d/02-mod_wsgi.conf
+echo "...to check result(3)"
+ldd /etc/httpd/modules/mod_wsgi.so
+ls -l  /etc/httpd/modules/mod_wsgi.so
+echo "...to restart httpd"
+sudo systemctl restart httpd
+sudo systemctl status httpd
+echo "=== end of this script, by Mark 2020-01-19"
